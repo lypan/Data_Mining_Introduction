@@ -1,0 +1,224 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<title>Data Mining Introduction</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=1274, user-scalable=no">
+	<meta name="description" content="Data Mining Introduction">
+	<meta name="author" content="LiangYuPan">
+	<meta name="generator" content="slidify" />
+	<!-- LOAD STYLE SHEETS -->
+	<link rel="stylesheet" href="libraries/frameworks/shower/themes/ribbon/styles/screen.css">
+	<link rel="stylesheet" media="print"
+	  href="libraries/frameworks/shower/themes/ribbon/styles/print.css">
+	<link rel="stylesheet" href="libraries/highlighters/highlight.js/css/tomorrow.css">  <link rel="stylesheet" href = "assets/css/ribbons.css">
+
+	<!--
+		To apply styles to the certain slides
+		use slide ID to get needed elements
+		-->
+	<style>
+		#Cover h2 {
+      margin:65px 0 0;
+			color:#FFF;
+			text-align:center;
+			font-size:70px;
+			}
+		#FitToWidth h2,
+		#FitToHeight h2 {
+			color:#FFF;
+			text-align:center;
+			}
+	</style> 
+</head>
+<body class="list">
+  <header class="caption">
+  	<h1>Data Mining Introduction</h1>
+	</header>
+  <section class="slide cover" id="Cover">
+  <div>
+    <h2>Titanic: Machine Learning from Disaster</h2>
+    <h2>Group 13</h2>
+
+<p><img src="assets/img/titanic_sinking.png" alt="cover"></p>
+
+  </div>
+</section>
+<section class="slide " id="slide-2">
+  <div>
+    <h2>Problem Description</h2>
+    <blockquote>
+<p>The titanic disaster is the most infamous shipwrecks in history. Although there were some elements of luck involved, some groups of people were more likely to survive than the others.</p>
+</blockquote>
+
+<h2><em>Goal: Survival prediction based on analyzing what sorts of people are more likely to survive.</em></h2>
+
+  </div>
+</section>
+<section class="slide " id="slide-3">
+  <div>
+    <h2>Data Codebook1</h2>
+    <table><thead>
+<tr>
+<th align="left"><em><strong>Feature</strong></em></th>
+<th align="left"><em><strong>Meaning</strong></em></th>
+</tr>
+</thead><tbody>
+<tr>
+<td align="left">survival&nbsp;&nbsp;&nbsp;</td>
+<td align="left">Survival(0 = No; 1 = Yes)</td>
+</tr>
+<tr>
+<td align="left">pclass</td>
+<td align="left">Passenger’s ticket class(1 = upper; 2 = middle; 3 = lower)</td>
+</tr>
+<tr>
+<td align="left">name</td>
+<td align="left">Passenger’s name</td>
+</tr>
+<tr>
+<td align="left">sex</td>
+<td align="left">Passenger’s sex</td>
+</tr>
+<tr>
+<td align="left">age</td>
+<td align="left">Passenger’s age</td>
+</tr>
+</tbody></table>
+
+  </div>
+</section>
+<section class="slide " id="slide-4">
+  <div>
+    <h2>Data Codebook2</h2>
+    <table><thead>
+<tr>
+<th align="left"><em><strong>Feature</strong></em></th>
+<th align="left"><em><strong>Meaning</strong></em></th>
+</tr>
+</thead><tbody>
+<tr>
+<td align="left">sibsp</td>
+<td align="left">Number of siblings/spouses aboard</td>
+</tr>
+<tr>
+<td align="left">parch</td>
+<td align="left">Number of parents/children aboard</td>
+</tr>
+<tr>
+<td align="left">ticket</td>
+<td align="left">Ticket Number(Type)</td>
+</tr>
+<tr>
+<td align="left">fare</td>
+<td align="left">Passenger&#39;s fare</td>
+</tr>
+<tr>
+<td align="left">cabin</td>
+<td align="left">Passenger’s cabin</td>
+</tr>
+<tr>
+<td align="left">embarked&nbsp;&nbsp;&nbsp;</td>
+<td align="left">Port of Embarkation(C = Cherbourg; Q = Queenstown; S = Southampton)</td>
+</tr>
+</tbody></table>
+
+  </div>
+</section>
+<section class="slide " id="Train">
+  <div>
+    <h2>Train Data</h2>
+    <p><img src="assets/img/train_data.png" alt="train_data"></p>
+
+  </div>
+</section>
+<section class="slide " id="slide-6">
+  <div>
+    <h2>Evaluation</h2>
+    <ul>
+<li>Private and Public Testing:
+
+<ul>
+<li>Public: <code>50%</code> of the total test set will be assigned to the pubic leaderboard for all users</li>
+<li>Private: at the end of the competition, the score that is based on the private test set(remaining <code>50%</code> of total test set) will be revealed</li>
+</ul></li>
+</ul>
+
+  </div>
+</section>
+<section class="slide " id="slide-7">
+  <div>
+    <h2>Competition Deadline</h2>
+    <h3>2015/12/31 11:59:00</h3>
+
+  </div>
+</section>
+<section class="slide " id="slide-8">
+  <div>
+    <h2>KDD(Knowledge Discovery in Databases) Process</h2>
+    <p><img src="assets/img/kdd_process.png" alt="KDD"></p>
+
+  </div>
+</section>
+<section class="slide " id="slide-9">
+  <div>
+    <h2>Machine Learning</h2>
+    <ul>
+<li><strong>Classification</strong>(<em>Supervised</em>)
+
+<ul>
+<li>If you want to answer a yes/no question</li>
+</ul></li>
+<li><strong>Regression</strong>(<em>Supervised</em>)
+
+<ul>
+<li>If you want to predict a numerical value</li>
+</ul></li>
+<li><strong>Clustering</strong>(<em>Unsupervised</em>)
+
+<ul>
+<li>If you want to group observations into similar-looking groups</li>
+</ul></li>
+<li><strong>Recommender System</strong>
+
+<ul>
+<li>If you want to recommend someone an item based on ratings data from customers</li>
+</ul></li>
+</ul>
+
+  </div>
+</section>
+<section class="slide " id="slide-10">
+  <div>
+    <h2>Idea</h2>
+    <ul>
+<li><strong>PCA</strong></li>
+<li><strong>KNN</strong></li>
+<li><strong>BAYESIAN</strong></li>
+<li><strong>SVM</strong></li>
+<li><strong>ANN</strong></li>
+<li><strong>CONFUSION-MATRIX</strong></li>
+<li><strong>CROSS-VALIDATION</strong></li>
+</ul>
+
+  </div>
+</section>
+<section class="slide shout" id="QA">
+  <div>
+    <h2>Q&amp;A</h2>
+    
+  </div>
+</section>
+  <div class="progress">
+    <div></div>
+  </div>
+	<script src="libraries/frameworks/shower/shower.js"></script>
+	<!-- LOAD HIGHLIGHTER JS FILES -->
+	<script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
+	<script>hljs.initHighlightingOnLoad();</script>
+	<!-- DONE LOADING HIGHLIGHTER JS FILES -->
+	 
+		<!-- Copyright © 2010–2012 Vadim Makeev — pepelsbey.net -->
+	<!-- Photos by John Carey — fiftyfootshadows.net -->
+</body>
+</html>
